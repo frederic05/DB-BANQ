@@ -31,6 +31,7 @@ const Login = lazy(() => import('../../views/Login'))
 const Register = lazy(() => import('../../views/Register'))
 const ForgotPassword = lazy(() => import('../../views/ForgotPassword'))
 const Error = lazy(() => import('../../views/Error'))
+const Addcompte = lazy(() => import('../../views/page/compte/addCompte'))
 
 // ** Merge Routes
 const Routes = [
@@ -74,6 +75,10 @@ const Routes = [
     meta: {
       layout: 'blank'
     }
+  },
+  {
+    path: '/addcompte',
+    element: <Addcompte />
   }
 ]
 

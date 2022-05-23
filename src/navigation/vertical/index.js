@@ -1,4 +1,4 @@
-import { Mail, Home, UserPlus, Cast, User, CornerRightUp, BookOpen, CreditCard, ArrowUpRight, ArrowDownLeft, List, Settings} from 'react-feather'
+import { Home, UserPlus, Cast, User, CornerRightUp, BookOpen, CreditCard, ArrowUpRight, ArrowDownLeft, List, Settings} from 'react-feather'
 
 export default [
   {
@@ -8,58 +8,59 @@ export default [
     navLink: '/home'
   },
   {
-    id: 'Compte',
+    id: 'compte',
     title: 'Gestion Compte',
     icon: <User size={20} />,
     children: [
       {
-        id: 'Cnew',
+        id: 'cnew',
         title: 'Nouveau',
-        icon: <UserPlus size={12} />
+        icon: <UserPlus size={12} />,
+        navLink: '/addcompte'
       }
     ]
   },
   {
-    id: 'Service',
+    id: 'service',
     title: 'Gestion Service',
     icon: <Cast size={20} />,
     children: [
       {
-        id: 'Snew',
+        id: 'snew',
         title: 'Nouveau',
         icon: <CornerRightUp size={12} />
       },
       {
-        id: 'Sfrom',
+        id: 'sfrom',
         title: 'formulaire',
         icon: <BookOpen size={12} />
       }
     ]
   },
   {
-    id: 'Operations',
+    id: 'operations',
     title: 'Gestion Opérations',
     icon: <CreditCard size={20} />,
     children: [
       {
-        id: 'Ttransfet',
+        id: 'ttransfet',
         title: 'Transert',
         icon: <ArrowUpRight size={12} />
       },
       {
-        id: 'Tretrait',
+        id: 'tretrait',
         title: 'Retrait',
         icon: <ArrowDownLeft size={12} />
       },
         {
-          id: 'Llist',
+          id: 'llist',
           title: 'Liste Opérations',
           icon: <List size={12} />
       }
     ]
   },
   {
-    id: 'Pparametrage',
+    id: 'pparametrage',
     title: 'Parametrage',
     icon: <Settings size={20} />,
     navLink: '/'

@@ -7,6 +7,7 @@ import CardMedal from './ui-element/home/CardMedal'
 import StatsCard from './ui-element/home/StatsCard'
 import CardBrowserState from './ui-element/home/CardBrowserStates'
 import CardTransactions from './ui-element/home/CardTransactions'
+import CardreHead from './ui-element/home/CardreHead'
 
 
 // ** Styles
@@ -23,6 +24,11 @@ const Home = () => {
 
   return (
     <div>
+      <Row className='match-height'>
+        <Col xl='12' md='6' xs='12'>
+          <CardreHead />
+        </Col>
+      </Row> 
       <Row className='match-height'>
         <Col xl='4' md='6' xs='12'>
           <CardMedal />
