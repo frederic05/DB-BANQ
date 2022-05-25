@@ -7,12 +7,11 @@ import {
     Modal, ModalHeader, ModalBody, ModalFooter,
      CardBody, Row, Input, Form, Label 
   } from 'reactstrap'
-  import { UserPlus } from 'react-feather'
+  import { CornerRightUp } from 'react-feather'
   import { Fragment, useState } from 'react'
-  import TableBasic from './compteTable'
 
 
-const Addcompte = () => {
+const AddService = () => {
 
     const [modal, setModal] = useState(false)
     const toggleModal       = () => { setModal(!modal) }
@@ -22,21 +21,18 @@ const Addcompte = () => {
         <Card>
                 <CardHeader style={{backgroundColor: '#7367f0'}}>
                         <Col lg='9' sm='6'>
-                            <CardTitle tag='h4' style={{color: '#FFFFFF'}}> <UserPlus />&nbsp;  Gestion des comptes utilisateurs</CardTitle>
+                            <CardTitle tag='h4' style={{color: '#FFFFFF'}}> <CornerRightUp />&nbsp;  Gestion des services</CardTitle>
                         </Col>
 
                         <Col lg='3' sm='6'>
                             <Button.Ripple color='warning' onClick={() => toggleModal()}>
-                                <UserPlus size={14} />                           
-                                <span className='align-middle ms-25'>Ajoutez un utilisateur</span>
+                                <CornerRightUp size={14} />                           
+                                <span className='align-middle ms-25'>Ajoutez un service</span>
                             </Button.Ripple>
                         </Col>               
                 </CardHeader>
         </Card>
              
-        <Card>
-                <TableBasic toggleModal={toggleModal}/>
-        </Card>
 
         <Modal
               isOpen={modal}
@@ -45,7 +41,7 @@ const Addcompte = () => {
               size="lg"
             >
               <ModalHeader toggle={() => toggleModal()} style={{backgroundColor: '#7367f0', color: '#FFFFFF'}}>
-                  <p style={{color: '#FFFFFF', fontSize: '18px'}}> <UserPlus size={25} /> &nbsp;&nbsp;&nbsp; Ajoutez un nouvel utilisateur</p>
+                  <p style={{color: '#FFFFFF', fontSize: '18px'}}> <CornerRightUp size={25} /> &nbsp;&nbsp;&nbsp; Ajoutez un nouveau service</p>
               </ModalHeader>
               <ModalBody>
                     <Fragment>
@@ -115,4 +111,4 @@ const Addcompte = () => {
 
 }
 
-export default  Addcompte
+export default  AddService

@@ -28,7 +28,8 @@ export default [
       {
         id: 'snew',
         title: 'Nouveau',
-        icon: <CornerRightUp size={12} />
+        icon: <CornerRightUp size={12} />,
+        navLink: '/addservice'
       },
       {
         id: 'sfrom',

@@ -23,7 +23,7 @@ const getLayout = {
 const TemplateTitle = '%s - Vuexy React Admin Template'
 
 // ** Default Route
-const DefaultRoute = '/home'
+const DefaultRoute = '/error'
 
 const Home = lazy(() => import('../../views/Home'))
 const SecondPage = lazy(() => import('../../views/SecondPage'))
@@ -32,6 +32,7 @@ const Register = lazy(() => import('../../views/Register'))
 const ForgotPassword = lazy(() => import('../../views/ForgotPassword'))
 const Error = lazy(() => import('../../views/Error'))
 const Addcompte = lazy(() => import('../../views/page/compte/addCompte'))
+const AddService = lazy(() => import('../../views/page/service/addService'))
 
 // ** Merge Routes
 const Routes = [
@@ -79,6 +80,10 @@ const Routes = [
   {
     path: '/addcompte',
     element: <Addcompte />
+  },
+  {
+    path: '/addservice',
+    element: <AddService />
   }
 ]
 
